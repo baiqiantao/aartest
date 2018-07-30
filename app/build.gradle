@@ -34,8 +34,7 @@ uploadArchives {
     def GITHUB_REPO_PATH = "D:\\aartest"  // 从Github上clone下来的项目的本地地址
     repositories.mavenDeployer {
         repository(url: "file://${file(GITHUB_REPO_PATH).absolutePath}")
-        pom.project {
-            //引用时的格式为【implementation 'com.bqt.aartest:blibrary:1.0.0'】
+        pom.project {  //引用时的格式为【implementation 'com.bqt.aartest:blibrary:1.0.0'】
             groupId 'com.bqt.aartest'
             artifactId 'blibrary'
             version '1.0.0'
