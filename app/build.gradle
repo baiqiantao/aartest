@@ -28,7 +28,8 @@ dependencies {
 }
 
 apply plugin: 'com.github.dcendents.android-maven'
-
+group = 'com.bqt'
+version = '1.0'
 //**********************************************************************   打包发布
 //apply plugin: 'maven'
 //
